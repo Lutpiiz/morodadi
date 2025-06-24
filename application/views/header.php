@@ -16,8 +16,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
-            <a href="<?php echo base_url('welcome') ?>"><img src="<?php echo base_url('assets/LogoBengkel.png') ?>" alt="" width="100px"></a>
-            <a href="<?php echo base_url('welcome') ?>" class="navbar-brand ms-2" style="font-size: 30px; font-weight: 500;">Morodadi</a>
+            <a href="<?php echo base_url('welcome') ?>"><img src="<?php echo base_url('assets/LogoBengkel.png') ?>" alt="" width="100px" class="logo"></a>
+            <a href="<?php echo base_url('welcome') ?>" class="navbar-brand ms-2" style="font-size: 30px; font-weight: 500;">Morodadi Radiator</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#naff">
                 <span class="navbar-toggler-icon"> </span> </button>
             <div class="collapse navbar-collapse" id="naff">
@@ -33,7 +33,7 @@
                         <a href="<?php echo base_url('artikel') ?>" class="nav-link">Artikel</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo base_url('about') ?>" class="nav-link">Tentang Kami</a>
+                        <a href="<?php echo base_url('tentang') ?>" class="nav-link">Tentang Kami</a>
                     </li>
                 </ul>
 

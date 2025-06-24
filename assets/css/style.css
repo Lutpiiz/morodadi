@@ -5,6 +5,11 @@ body {
     /* background: #EEEEEE; */
 }
 
+.logo {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
 /* Bar Progres */
 .progress-tracker {
   display: flex;

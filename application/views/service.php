@@ -1,9 +1,9 @@
 <div class="container mt-3" style="width: 60%;">
-    <form action="" method="post">
+    <form action="<?php echo base_url('service/proses') ?>" method="post">
         <h2 class="text-center">Isi Formulir</h2>
         <div class="mb-3">
             <label>Nama</label>
-            <input type="text" name="nama" class="form-control" value="<?php echo set_value("nama") ?>">
+            <input type="text" name="nama" class="form-control" value="<?php echo set_value("nama") ?>" required>
             <span class="text-muted"><?php echo form_error("nama") ?></span>
         </div>
         <div class="mb-3">
@@ -23,18 +23,18 @@
         </div>
         <div class="mb-3">
             <label>Nomor Telepon/WA</label>
-            <input type="number" name="nomor_telepon" class="form-control" value="<?php echo set_value("nomor_telepon") ?>">
-            <span class="text-muted"><?php echo form_error("nomor_telepon") ?></span>
+            <input type="number" name="no_telepon" class="form-control" value="<?php echo set_value("no_telepon") ?>" required>
+            <span class="text-muted"><?php echo form_error("no_telepon") ?></span>
         </div>
         <div class="mb-3">
-            <label>Pilihan Service</label>
-            <select class="form-control" id="pilih_service" name="pilih_service" required>
+            <label>Pilihan Servis</label>
+            <select class="form-control" id="pilihan_servis" name="pilihan_servis" required>
                 <option value="a">Service A</option>
                 <option value="b">Service B</option>
                 <option value="C">Service C</option>
                 <option value="d">Service D</option>
             </select>
-            <span class="text-muted"><?php echo form_error("pilih_service") ?></span>
+            <span class="text-muted"><?php echo form_error("pilihan_servis") ?></span>
         </div>
         <div class="mb-3">
             <label>Pesan Kendala</label>
