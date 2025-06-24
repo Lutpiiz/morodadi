@@ -15,8 +15,9 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container mx-5">
-            <a href="<?php echo base_url('welcome') ?>"><img src="<?php echo base_url('assets/LogoBengkel.png') ?>" alt="" width="100px" class="mx-5"></a>
+        <div class="container">
+            <a href="<?php echo base_url('welcome') ?>"><img src="<?php echo base_url('assets/LogoBengkel.png') ?>" alt="" width="100px"></a>
+            <a href="<?php echo base_url('welcome') ?>" class="navbar-brand ms-2" style="font-size: 30px; font-weight: 500;">Morodadi</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#naff">
                 <span class="navbar-toggler-icon"> </span> </button>
             <div class="collapse navbar-collapse" id="naff">

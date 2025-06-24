@@ -47,33 +47,33 @@
 
         <div style="margin: auto;">
             <div class="row mb-2">
-            <div class="col-md-3 fw-bold">Nama</div>
-            <div class="col-md-9">: Ahmad Surya</div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-3 fw-bold">Alamat</div>
-            <div class="col-md-9">: Jl. Melati No. 45, Sleman, Yogyakarta</div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-3 fw-bold">No Telepon / WA</div>
-            <div class="col-md-9">: 081234567890</div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-3 fw-bold">Jenis Kendaraan</div>
-            <div class="col-md-9">: Honda Jazz RS 2019</div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-3 fw-bold">Pilihan Service</div>
-            <div class="col-md-9">: Ganti Radiator + Cek Sistem Pendingin</div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-3 fw-bold">Pesan Kendala</div>
-            <div class="col-md-9">: Mesin cepat panas saat macet, air radiator sering habis</div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-3 fw-bold">Kode Service</div>
-            <div class="col-md-9">: SRV20250612-001</div>
-        </div>
+                <div class="col-md-3 fw-bold">Nama</div>
+                <div class="col-md-9">: Ahmad Surya</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3 fw-bold">Alamat</div>
+                <div class="col-md-9">: Jl. Melati No. 45, Sleman, Yogyakarta</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3 fw-bold">No Telepon / WA</div>
+                <div class="col-md-9">: 081234567890</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3 fw-bold">Jenis Kendaraan</div>
+                <div class="col-md-9">: Honda Jazz RS 2019</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3 fw-bold">Pilihan Service</div>
+                <div class="col-md-9">: Ganti Radiator + Cek Sistem Pendingin</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3 fw-bold">Pesan Kendala</div>
+                <div class="col-md-9">: Mesin cepat panas saat macet, air radiator sering habis</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-3 fw-bold">Kode Service</div>
+                <div class="col-md-9">: SRV20250612-001</div>
+            </div>
         </div>
     </div>
 
