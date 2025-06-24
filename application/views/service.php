@@ -9,10 +9,11 @@
         <div class="mb-3">
             <label>Jenis Kendaraan</label>
             <select class="form-control" id="jenis_kendaraan" name="jenis_kendaraan" required>
-                <option value="a">Kendaraan A</option>
-                <option value="b">Kendaraan B</option>
-                <option value="C">Kendaraan C</option>
-                <option value="d">Kendaraan D</option>
+                <option value="SUV">SUV</option>
+                <option value="MPV">MPV</option>
+                <option value="LCGC">LCGC</option>
+                <option value="Truk">Truk</option>
+                <option value="Alat Berat">Alat Berat</option>
             </select>
             <span class="text-muted"><?php echo form_error("jenis_kendaraan") ?></span>
         </div>

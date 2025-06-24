@@ -1,26 +1,25 @@
 <div class="container">
     <h2 class="text-center mt-3">Progres Service</h2>
-    <h4 class="text-center mt-5">Input Kode Service</h4>
+    <h4 class="text-center mt-5">Masukkan No. Telepon</h4>
     <form action="" method="post" style="text-align: center;">
-        <input type="text" class="form-control" name="kode_service" style="margin: auto; width: 60%;">
-        <button type="submit" class="btn btn-danger mt-3" style=" width: 10%;">Lacak</button>
+        <input type="text" class="form-control" name="kode_service" placeholder="contoh : 0812345678" style="margin: auto; width: 60%;">
+        <button type="submit" class="btn btn-danger mt-3" style="width: 10%;">Lacak</button>
     </form>
 
     <?php
-    // Simulasi status dari backend (misalnya dari database)
-    $status = 'perbaikan'; // Ganti dengan nilai aktual dari database: 'diterima', 'diagnosa', 'perbaikan', 'selesai'
-
     $step_status = [
-        'diterima' => 1,
+        'masuk' => 1,
         'diagnosa' => 2,
         'perbaikan' => 3,
         'selesai' => 4
     ];
 
-    $currentStep = isset($step_status[$status]) ? $step_status[$status] : 0;
+    if ($order) :
+        $currentStep = isset($step_status[$order['status_orderan']]) ? $step_status[$order['status_orderan']] : 0;
     ?>
 
-    <div class="progress-tracker">
+    <!-- PROGRESS TRACKER -->
+    <div class="progress-tracker mt-5">
         <div class="step-group">
             <div class="icon <?php if ($currentStep >= 1) echo 'active'; ?>"><i class="fas fa-inbox"></i></div>
             <p>Diterima</p>
@@ -42,41 +41,38 @@
         </div>
     </div>
 
+    <!-- DETAIL CUSTOMER -->
     <div class="container mt-5" style="width: 60%;">
         <h4 class="text-center mb-4">Detail Customer</h4>
-
         <div style="margin: auto;">
             <div class="row mb-2">
                 <div class="col-md-3 fw-bold">Nama</div>
-                <div class="col-md-9">: Ahmad Surya</div>
+                <div class="col-md-9">: <?= $order['nama'] ?></div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-3 fw-bold">Alamat</div>
-                <div class="col-md-9">: Jl. Melati No. 45, Sleman, Yogyakarta</div>
+                <div class="col-md-9">: <?= $order['alamat'] ?></div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-3 fw-bold">No Telepon / WA</div>
-                <div class="col-md-9">: 081234567890</div>
+                <div class="col-md-9">: <?= $order['no_telepon'] ?></div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-3 fw-bold">Jenis Kendaraan</div>
-                <div class="col-md-9">: Honda Jazz RS 2019</div>
+                <div class="col-md-9">: <?= $order['jenis_kendaraan'] ?></div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-3 fw-bold">Pilihan Service</div>
-                <div class="col-md-9">: Ganti Radiator + Cek Sistem Pendingin</div>
+                <div class="col-md-9">: <?= $order['pilihan_servis'] ?></div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-3 fw-bold">Pesan Kendala</div>
-                <div class="col-md-9">: Mesin cepat panas saat macet, air radiator sering habis</div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-md-3 fw-bold">Kode Service</div>
-                <div class="col-md-9">: SRV20250612-001</div>
+                <div class="col-md-9">: <?= $order['pesan_kendala'] ?></div>
             </div>
         </div>
     </div>
 
-
-
+    <?php elseif ($this->input->post('kode_service')): ?>
+        <div class="alert alert-danger mt-4 text-center">Data tidak ditemukan untuk kode service: <strong><?= $this->input->post('kode_service') ?></strong></div>
+    <?php endif; ?>
 </div>
