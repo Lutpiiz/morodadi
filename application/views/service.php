@@ -30,10 +30,10 @@
         <div class="mb-3">
             <label>Pilihan Servis</label>
             <select class="form-control" id="pilihan_servis" name="pilihan_servis" required>
-                <option value="a">Service A</option>
-                <option value="b">Service B</option>
-                <option value="C">Service C</option>
-                <option value="d">Service D</option>
+                <option value="Korok">Korok</option>
+                <option value="Tambal Bocor">Tambal Bocor</option>
+                <option value="Ganti Tank">Ganti Tank</option>
+                <option value="Ganti Core">Ganti Core</option>
             </select>
             <span class="text-muted"><?php echo form_error("pilihan_servis") ?></span>
         </div>

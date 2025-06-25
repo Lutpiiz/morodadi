@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="margin-bottom: 300px;">
     <h2 class="text-center mt-3">Progres Service</h2>
     <h4 class="text-center mt-5">Masukkan No. Telepon</h4>
     <form action="" method="post" style="text-align: center;">
@@ -18,7 +18,7 @@
         $currentStep = isset($step_status[$order['status_orderan']]) ? $step_status[$order['status_orderan']] : 0;
     ?>
 
-    <!-- PROGRESS TRACKER -->
+    <!-- Progres -->
     <div class="progress-tracker mt-5">
         <div class="step-group">
             <div class="icon <?php if ($currentStep >= 1) echo 'active'; ?>"><i class="fas fa-inbox"></i></div>
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <!-- DETAIL CUSTOMER -->
+    <!-- Detail Customer -->
     <div class="container mt-5" style="width: 60%;">
         <h4 class="text-center mb-4">Detail Customer</h4>
         <div style="margin: auto;">

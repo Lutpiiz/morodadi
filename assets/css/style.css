@@ -10,6 +10,10 @@ body {
   margin-bottom: -10px;
 }
 
+.nav-link{
+  color: white !important;
+}
+
 /* Bar Progres */
 .progress-tracker {
   display: flex;

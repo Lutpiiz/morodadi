@@ -23,6 +23,8 @@ class Service extends CI_Controller {
 
         $this->db->insert('orderan', $data);
 
+        $this->session->set_flashdata('pesan_sukses', 'Pesanan diterima! Silakan masukkan nomor telepon untuk melacak pesanan anda');
+
         redirect('lacak', 'refresh');
     }
 }
