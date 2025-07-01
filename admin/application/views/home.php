@@ -46,7 +46,7 @@
 </style>
 
 <div class="mb-5">
-  <img src="<?php echo base_url('assets/_ (4).jpeg') ?>" alt="" width="100%" height="300px">
+  <img src="<?php echo base_url('../assets/images/banner.png') ?>" alt="" width="100%">
 </div>
 
 <div class="container">
@@ -59,7 +59,7 @@
       </p>
     </div>
     <div class=" text-center mb-5 col">
-      <img src="<?php echo base_url('assets/_ (4).jpeg') ?>" style="border-radius: 30px; width: 400px; width: 70%;">
+      <img src="<?php echo base_url('../assets/images/radiator1.jpeg') ?>" style="border-radius: 30px; width: 400px; width: 70%;">
     </div>
   </div>
 </div>

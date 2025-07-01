@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/morodadi/admin/';
-$config['image_url'] = 'http://localhost/morodadi/assets/';
+$config['assets_url'] = 'http://localhost/morodadi/assets/';
 
 /*
 |--------------------------------------------------------------------------
