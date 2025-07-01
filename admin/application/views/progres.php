@@ -3,10 +3,10 @@ $tanggal = '2025-06-01 12:30:00';
 ?>
 
 <!-- Main Content -->
-<div class="container">
-  <h1 class="text-center">Data Servis Masuk</h1>
+<div class="container my-4">
+  <h1 class="text-center mb-4">Data Servis Masuk</h1>
   <div>
-    <table class="w-100 table table-borderless table-striped table-light text-center" id="tabelku">
+    <table class="w-100 table table-borderless table-striped text-center" id="tabelku">
       <thead>
         <tr>
           <th scope="col">Tanggal Pesan</th>
@@ -25,7 +25,7 @@ $tanggal = '2025-06-01 12:30:00';
             <td><?php echo $value['jenis_kendaraan']; ?></td>
             <td>
               <a href="<?php echo base_url('progres/detail/' . $value['id_order']); ?>" 
-                 class="btn orange text-white">Detail</a>
+                 class="btn btn-danger text-white">Detail</a>
             </td>
           </tr>
         <?php endforeach; ?>

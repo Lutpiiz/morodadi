@@ -14,4 +14,12 @@ class Progres extends CI_Controller {
 		$this->load->view('progres', $data);
 		$this->load->view('footer');
     }
+
+    public function detail($id_order) {
+        $data['order'] = $this->Mprogres->detail($id_order);
+        
+        $this->load->view('header');
+		$this->load->view('detail_progres', $data);
+		$this->load->view('footer');
+    }
 }
