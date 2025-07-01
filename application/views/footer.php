@@ -83,7 +83,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        Copyright©️Morodadi Radiator
+        © 2025 Copyright Morodadi Radiator
     </div>
     <!-- Copyright -->
 </footer>
